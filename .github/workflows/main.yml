@@ -1,7 +1,9 @@
 name: Publish to GitHub Pages
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - nolinks
 
 jobs:
   build:
@@ -30,11 +32,14 @@ jobs:
         run: npm ci
 
       - name: Generate Site
-        run: npm run build
+        run: |
+            mkdir -p build/site/$GITHUB_REF_NAME
+            npx antora antora-playbook.yml --to-dir build/site/$GITHUB_REF_NAME
 
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: build/site
+          destination_dir: build/site/${{ github.ref_name }}
           keep_files: true
