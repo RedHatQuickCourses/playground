@@ -2,6 +2,8 @@
 
 In this chapter, we attempt to produce two versions of the same index page, one with links to other quick courses, another without, that share the same content for all other chapters and sections, and all live in the same git repository.
 
+This page should display in the `nolinks` branch.
+
 == Red Hat Device Edge Quick Courses
 
 NOTE: If this experiment works, you should see a sentence that apologizes it cannot provide any links.
