@@ -1,6 +1,10 @@
 = Chapter 1
 
-In this chapter, we attempt to produce two versions of the same index page, one with links to other quick courses, another without, that share the same content for all other chapters and sections, and all live in the same git repository.
+In this chapter, we attempt to produce two versions of the same chapter index page, one with links to other quick courses, another without, that share the same content for all other chapters and sections, and all live in the same git repository.
+
+The two versions are in different branches: `main` and `nolinks`. If differences between these branches are minimal (as in our current use case of not displaying links in a single page) it should be manageable.
+
+This page shoud display in the `main` branch.
 
 This page should display in the `nolinks` branch.
 
