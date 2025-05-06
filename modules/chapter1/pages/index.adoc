@@ -11,6 +11,5 @@ The following Red Hat Device Edge quick courses share the same https://role.rhu.
 * https://redhatquickcourses.github.io/rhde-build/[Building Red Hat Device Edge Images^]
 * https://redhatquickcourses.github.io/rhde-microshift/[Deploying MicroShift on Red Hat Device Edge^]
 * https://redhatquickcourses.github.io/rhde-microshift-bootc/[Deploying MicroShift on RHEL Image Mode^]
-* 
 
 All other chapters and sections are, for now, unchanged from the starter template, but they may be changed in the future, if we use this git repository for further experiments.
