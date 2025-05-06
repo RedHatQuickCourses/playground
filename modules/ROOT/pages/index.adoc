@@ -1,27 +1,21 @@
-= An Example Quick Course
+= Antora Features Playground
 :navtitle: Home
 
 == Introduction
 
-Course Title: Course title FIXME
-
-Description:
-Course description FIXME
-
-Duration: FIXME hours
+This is NOT a real training.
+It's just a test bed to experiment with Antora features.
 
 == Objectives
 
 On completing this course, you should be able to:
 
-* Observable, measurable objective...
-* Observable, measurable objective...
-* Observable, measurable objective...
+* Produce different variations of the same quick course, without having to manually copy content nor create multiple git repositories.
 
 == Prerequisites
 
 This course assumes that you have the following prior experience:
 
-* Course or experience...
-* Course or experience...
-* Course or experience...
+* Experience using Antora, Asciidoc, and associated tooling.
+* Ability to write sentences using the English language.
+* If you miss any of the above, you can try faking knowedge with help of any AI assitant on your own risk. ;-)

@@ -1,7 +1,16 @@
 = Chapter 1
 
-In this section, we cover... FIXME
+In this section, we attempt to produce two versions of the same page, one with links to other quick courses, another without, that share the same content for all other chapters and sections, and all live in the same git repository.
 
+== Red Hat Device Edge Quick Courses
 
-- Add or remove section entries in the `antora.yaml` file as needed.
-- Ensure you create or delete the corresponding directory for the chapter accordingly.
+NOTE: If this experiment works, you should see a link to a classroom in RHU followed by links to three quick courses on GitHub:
+
+The following Red Hat Device Edge quick courses share the same https://role.rhu.redhat.com/rol-rhu/app/courses/hol014-9.5/pages/pr01[HOL014^] ROLE classroom:
+
+* https://redhatquickcourses.github.io/rhde-build/[Building Red Hat Device Edge Images^]
+* https://redhatquickcourses.github.io/rhde-microshift/[Deploying MicroShift on Red Hat Device Edge^]
+* https://redhatquickcourses.github.io/rhde-microshift-bootc/[Deploying MicroShift on RHEL Image Mode^]
+* 
+
+All other chapters and sections are, for now, unchanged from the starter template, but they may be changed in the future, if we use this git repository for further experiments.
