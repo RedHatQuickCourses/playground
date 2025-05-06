@@ -4,12 +4,8 @@ In this chapter, we attempt to produce two versions of the same index page, one 
 
 == Red Hat Device Edge Quick Courses
 
-NOTE: If this experiment works, you should see a link to a classroom in RHU followed by links to three quick courses on GitHub:
+NOTE: If this experiment works, you should see a sentence that apologizes it cannot provide any links.
 
-The following Red Hat Device Edge quick courses share the same https://role.rhu.redhat.com/rol-rhu/app/courses/hol014-9.5/pages/pr01[HOL014^] ROLE classroom:
-
-* https://redhatquickcourses.github.io/rhde-build/[Building Red Hat Device Edge Images^]
-* https://redhatquickcourses.github.io/rhde-microshift/[Deploying MicroShift on Red Hat Device Edge^]
-* https://redhatquickcourses.github.io/rhde-microshift-bootc/[Deploying MicroShift on RHEL Image Mode^]
+All Red Hat Device Edge quick courses use a ROLE classroom, which requires a Red Hat Learning Subscription. If you are here, it seems that you do not have a learning subscription.
 
 All other chapters and sections are, for now, unchanged from the starter template, but they may be changed in the future, if we use this git repository for further experiments.
