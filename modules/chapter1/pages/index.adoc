@@ -4,6 +4,8 @@ In this chapter, we attempt to produce two versions of the same chapter index pa
 
 The two versions are in different branches: `main` and `nolinks`. If differences between these branches are minimal (as in our current use case of not displaying links in a single page) it should be manageable.
 
+This page shoud display in the `main` branch.
+
 == Red Hat Device Edge Quick Courses
 
 NOTE: If this experiment works, you should see a link to a classroom in RHU followed by links to three quick courses on GitHub:
