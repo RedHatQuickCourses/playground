@@ -1,6 +1,6 @@
 site:
-  title: FIXME Course Title
-  start_page: REPLACEREPONAME::index.adoc
+  title: Antora Features Playground
+  start_page: playground::index.adoc
 
 content:
   sources:
