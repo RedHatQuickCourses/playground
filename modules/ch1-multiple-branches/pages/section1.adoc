@@ -21,3 +21,5 @@ If you must change the files that are different in nolinks, after the merge you 
 Keeping old files on the `gh-pages` branch may mislead you into thinking changes were NOT published, if you change file names and your Antora book structure, and then refresh a web browser that was on a page with the old name: the old page is still there, even if unreachable by Antora navigation.
 
 An alternative would be to change the GitHub page action to always push and buil all branches, cleaning and regenerating the `gh-pages` at every run. This is possible, just more work (and a longer running action).
+
+True, this is more of a _hack_ on GitHub Actions than using Antora's features.
