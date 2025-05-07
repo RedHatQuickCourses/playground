@@ -14,4 +14,10 @@ If you're modifying an existing repo, you may need to configure the action to de
 
 Changed this section, just to test that, as I update main, I can sync (merge) those changes with nolinks, and still keep the changes from nolinks.
 
-Of course, if you must change the files that are different in nolinks, after the merge you have to re-apply the edits that make the nolinks branch different from main.
+== Caveats
+
+If you must change the files that are different in nolinks, after the merge you have to re-apply the edits that make the nolinks branch different from main.
+
+Keeping old files on the `gh-pages` branch may mislead you into thinking changes were NOT published, if you change file names and your Antora book structure, and then refresh a web browser that was on a page with the old name: the old page is still there, even if unreachable by Antora navigation.
+
+An alternative would be to change the GitHub page action to always push and buil all branches, cleaning and regenerating the `gh-pages` at every run. This is possible, just more work (and a longer running action).
