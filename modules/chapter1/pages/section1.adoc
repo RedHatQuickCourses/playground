@@ -1,4 +1,16 @@
-= Section 1
+= How It Works
+
+Standard Antora web sites are in a directory named aftger the github project (or whatever the top level name of it for Antora xrefs), for example `playground/1/` and it generates an index.html page on the root directory.
+
+That gives us lots of freedom to add additional subdirectories for banches, and them you just have to refer to those directories explicity in your URLs, and they won't conflict with the URLs from the main branch or default GitHub pages.
+
+You change the GitHub actions workflow in `.github/workflows/main.yml` to:
+
+* Monitor branches other than `main`.
+* Geenerate other branches in a subdirectory.
+* Not delete preexisting files inside the `gh-pages` branch.
+
+If you're modifying an existing repo, you may need to configure the action to delete files, and then change the action to not delete then anymore. Or just manually clean the `gh-pages` branch.
 
 Changed this section, just to test that, as I update main, I can sync (merge) those changes with nolinks, and still keep the changes from nolinks.
 
