@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Chapter 3 :: Antora Features Playground</title>
-    <link rel="prev" href="../chapter2/section1.html">
-    <link rel="next" href="section1.html">
+    <title>How It Works :: Antora Features Playground</title>
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -66,15 +64,15 @@
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="1">
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="index.html">Chapter 3</a>
+    <a class="nav-link" href="../chapter3/index.html">Chapter 3</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="section1.html">Section 1</a>
+    <a class="nav-link" href="../chapter3/section1.html">Section 1</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="section2.html">Section 2</a>
+    <a class="nav-link" href="../chapter3/section2.html">Section 2</a>
   </li>
 </ul>
   </li>
@@ -116,7 +114,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Antora Features Playground</a></li>
-    <li><a href="index.html">Chapter 3</a></li>
+    <li><a href="section1.html">How It Works</a></li>
   </ul>
 </nav>
 </div>
@@ -125,24 +123,38 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Chapter 3</h1>
+<h1 class="page">How It Works</h1>
 <div class="paragraph">
-<p>In this section, we cover&#8230;&#8203; FIXME</p>
+<p>Standard Antora web sites are in a directory named aftger the github project (or whatever the top level name of it for Antora xrefs), for example <code>playground/1/</code> and it generates an index.html page on the root directory.</p>
+</div>
+<div class="paragraph">
+<p>That gives us lots of freedom to add additional subdirectories for banches, and them you just have to refer to those directories explicity in your URLs, and they won&#8217;t conflict with the URLs from the main branch or default GitHub pages.</p>
+</div>
+<div class="paragraph">
+<p>You change the GitHub actions workflow in <code>.github/workflows/main.yml</code> to:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Add or remove section entries in the <code>antora.yaml</code> file as needed.</p>
+<p>Monitor branches other than <code>main</code>.</p>
 </li>
 <li>
-<p>Ensure you create or delete the corresponding directory for the chapter accordingly.</p>
+<p>Geenerate other branches in a subdirectory.</p>
+</li>
+<li>
+<p>Not delete preexisting files inside the <code>gh-pages</code> branch.</p>
 </li>
 </ul>
 </div>
-<nav class="pagination">
-  <span class="prev"><a href="../chapter2/section1.html">Section 1</a></span>
-  <span class="next"><a href="section1.html">Section 1</a></span>
-</nav>
+<div class="paragraph">
+<p>If you&#8217;re modifying an existing repo, you may need to configure the action to delete files, and then change the action to not delete then anymore. Or just manually clean the <code>gh-pages</code> branch.</p>
+</div>
+<div class="paragraph">
+<p>Changed this section, just to test that, as I update main, I can sync (merge) those changes with nolinks, and still keep the changes from nolinks.</p>
+</div>
+<div class="paragraph">
+<p>Of course, if you must change the files that are different in nolinks, after the merge you have to re-apply the edits that make the nolinks branch different from main.</p>
+</div>
 </article>
   </div>
 </main>
