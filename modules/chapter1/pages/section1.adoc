@@ -1,5 +1,0 @@
-= Section 1
-
-Changed this section, just to test that, as I update main, I can sync (merge) those changes with nolinks, and still keep the changes from nolinks.
-
-Of course, if you must change the files that are different in nolinks, after the merge you have to re-apply the edits that make the nolinks branch different from main.
