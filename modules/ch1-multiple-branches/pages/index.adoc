@@ -13,3 +13,5 @@ NOTE: If this experiment works, you should see a sentence that apologizes it can
 All Red Hat Device Edge quick courses use a ROLE classroom, which requires a Red Hat Learning Subscription. If you are here, it seems that you do not have a learning subscription.
 
 All other chapters and sections are, for now, unchanged from the starter template, but they may be changed in the future, if we use this git repository for further experiments.
+
+It's likely that the nolinks branch will get stale, as there is no real reason to keep it in sync with the content from other experiments. I'm OK with that.
