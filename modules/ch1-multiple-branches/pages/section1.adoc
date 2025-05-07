@@ -12,6 +12,8 @@ You change the GitHub actions workflow in `.github/workflows/main.yml` to:
 
 If you're modifying an existing repo, you may need to configure the action to delete files, and then change the action to not delete then anymore. Or just manually clean the `gh-pages` branch.
 
+NOTE: I tested manual clean up. The push to `gh-pages` fires the GitHub action but doesn't mess up with the published pages.
+
 Changed this section, just to test that, as I update main, I can sync (merge) those changes with nolinks, and still keep the changes from nolinks.
 
 == Caveats
